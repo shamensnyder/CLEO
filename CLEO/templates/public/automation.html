@@ -2,9 +2,22 @@
 
 {% block content %}
 <div class="body-content">
-    <div class="row">
-      <h1>Automation</h1>
-      <p>Welcome to the Automation page <a href="http://github.com/shamensnyder/">Shamen Snyder</a>
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>AS Config Gen</h2>
+      <p>Builds access switch configuration</p>
+      <p><a class="btn btn-default" href="http://automation/as_config_gen">Go! &raquo;</a></p>
     </div>
+    <div class="col-lg-4">
+      <h2>MPR Config Gen</h2>
+      <p>Builds MX Core configuration</p>
+      <p><a href="http://automation/mpr_config_gen" class="btn btn-default">Go! &raquo;</a></p>
+   </div>
+    <div class="col-lg-4">
+      <h2>l2circuit</h2>
+      <p>Builds configuration for l2circuits in the core</p>
+      <p><a href="http://automation/l2circuit" class="btn btn-default">Go! &raquo;</a></p>
+    </div>
+  </div><!-- /.row -->
 </div>
 {% endblock %}
