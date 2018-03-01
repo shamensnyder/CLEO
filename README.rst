@@ -2,7 +2,7 @@
 CLEO
 ===============================
 
-CLEO is a automation, configuration, information gathering, and documentation application. Keeping everything #SimpleAF
+CLEO is an automation, configuration, information gathering, and documentation application. Keeping everything #SimpleAF
 
 Shell
 -----
