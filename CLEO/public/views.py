@@ -56,8 +56,8 @@ def register():
     return render_template('public/register.html', form=form)
 
 
-@blueprint.route('/about/')
-def about():
-    """About page."""
+@blueprint.route('/automation/')
+def automation():
+    """Automation page."""
     form = LoginForm(request.form)
-    return render_template('public/about.html', form=form)
+    return render_template('public/automation.html', form=form)
