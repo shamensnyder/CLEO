@@ -4,7 +4,7 @@ from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import login_required, login_user, logout_user
 
 from CLEO.extensions import login_manager
-from CLEO.public.forms import LoginForm
+from CLEO.public.forms import LoginForm, l2circuitForm
 from CLEO.user.forms import RegisterForm
 from CLEO.user.models import User
 from CLEO.utils import flash_errors
@@ -80,6 +80,6 @@ def mpr():
 @login_required
 def l2circuit():
     """l2circuit page."""
-    form = LoginForm(request.form)
+    form = l2circuitForm()
     return render_template('public/l2circuit.html', form=form)', form=form)
 
