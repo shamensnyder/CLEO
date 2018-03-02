@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Layer 2 Circuit Configuration Generator</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.customer.label }}<br>
+            {{ form.customer(size=32) }}
+        </p>
+        <p>
+            {{ form.vlan.label }}<br>
+            {{ form.vlan(size=32) }}
+        </p>
+        <p>
+            {{ form.aloc.label }}<br>
+            {{ form.aloc(size=32) }}
+        </p>
+        <p>
+            {{ form.zloc.label }}<br>
+            {{ form.zloc(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
