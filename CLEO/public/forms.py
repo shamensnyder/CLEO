@@ -38,7 +38,7 @@ class LoginForm(FlaskForm):
             return False
         return True
     
-class l2circuit(FlaskForm):
+class l2circuitForm(FlaskForm):
     
     customer = StringField('Customer', validators=[DataRequired()])
     vlan = StringField('VLAN', validators=[DataRequired()])
