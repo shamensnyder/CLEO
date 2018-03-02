@@ -80,6 +80,6 @@ def mpr():
 @login_required
 def l2circuit():
     """l2circuit page."""
-    form = l2circuitForm()
-    return render_template('public/l2circuit.html', form=form)', form=form)
+    l2circuitform = l2circuitForm(request.form)
+    return render_template('public/l2circuit.html', form=l2circuitform)
 
