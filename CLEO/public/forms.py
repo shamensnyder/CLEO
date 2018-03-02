@@ -37,3 +37,11 @@ class LoginForm(FlaskForm):
             self.username.errors.append('User not activated')
             return False
         return True
+    
+class l2circuit(FlaskForm):
+    
+    customer = StringField('Customer', validators=[DataRequired()])
+    vlan = StringField('VLAN', validators=[DataRequired()])
+    aloc = StringField('A Location', validators=[DataRequired()])
+    zloc = StringField('Z Location', validators=[DataRequired()])
+    submit = SubmitField('Submit')
