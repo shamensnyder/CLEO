@@ -45,3 +45,5 @@ class l2circuitForm(FlaskForm):
     aloc = StringField('A Location', validators=[DataRequired()])
     zloc = StringField('Z Location', validators=[DataRequired()])
     submit = SubmitField('Submit')
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
