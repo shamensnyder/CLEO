@@ -61,3 +61,25 @@ def automation():
     """Automation page."""
     form = LoginForm(request.form)
     return render_template('public/automation.html', form=form)
+
+@blueprint.route('/as/')
+@login_required
+def accessSwitch():
+    """as page."""
+    form = LoginForm(request.form)
+    return render_template('public/as.html', form=form)', form=form)
+    
+@blueprint.route('/mpr/')
+@login_required
+def mpr():
+    """mpr page."""
+    form = LoginForm(request.form)
+    return render_template('public/mpr.html', form=form)', form=form)
+
+@blueprint.route('/l2circuit/')
+@login_required
+def l2circuit():
+    """l2circuit page."""
+    form = LoginForm(request.form)
+    return render_template('public/l2circuit.html', form=form)', form=form)
+
